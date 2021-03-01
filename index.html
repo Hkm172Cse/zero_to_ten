@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <h1>My Onclick Slider was this Mechanisms</h1>
+    <input  type="text" />
+    <button id="id" onclick="count()">Plas</button>
+    <button id="id" onclick="m_count()">Minus</button>
+               
+    <script>
+        var y = document.querySelector("input");
+        var x = 0; 
+        function count(){
+            x++;
+            y.value = x;
+            if(x>10){
+                x = 0;
+                y.value = x;
+            }
+        }
+        function m_count(){
+            x--;
+            y.value = x;
+            if(x<0){
+                x=10;
+                y.value = x;
+            }
+        }
+        
+    </script>            
+</body>
+</html>
